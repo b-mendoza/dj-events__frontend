@@ -1,10 +1,5 @@
 {
   "compilerOptions": {
-    // -------------------------------------------------------------------------
-    // Not sure if this property is needed, since I'm not looking to implement
-    // classes, but the `_document` component is a class, so I'm adding this
-    "noImplicitOverride": true,
-    // -------------------------------------------------------------------------
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
