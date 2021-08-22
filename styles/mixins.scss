@@ -1,0 +1,7 @@
+@mixin paddingReset {
+  padding: 2rem;
+
+  @media (min-width: 340px) {
+    padding: 3rem;
+  }
+}
