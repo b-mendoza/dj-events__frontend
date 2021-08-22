@@ -6,6 +6,8 @@ export function GlobalStyles() {
       styles={css`
         html {
           box-sizing: border-box;
+
+          font-size: 62.5%;
         }
 
         *,
@@ -15,12 +17,19 @@ export function GlobalStyles() {
         }
 
         body {
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
 
-          margin: 0;
+          font-size: 1.2rem;
 
-          padding: 0;
+          @media (min-width: 280px) {
+            font-size: 1.4rem;
+          }
+
+          @media (minwidth: 340px) {
+            font-size: 1.6rem;
+          }
         }
       `}
     />
