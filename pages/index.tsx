@@ -1,5 +1,11 @@
+import { SEOLayout } from 'components/Layouts';
+
 function Home() {
-  return <h1>Home Page</h1>;
+  return (
+    <SEOLayout>
+      <h1>Home Page</h1>
+    </SEOLayout>
+  );
 }
 
 export default Home;
