@@ -1,0 +1,1 @@
+export { SEOLayout } from './SEOLayout';
