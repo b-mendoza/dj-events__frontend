@@ -1,10 +1,10 @@
-import { SEOLayout } from 'components/Layouts';
+import { MainLayout } from 'components/Layouts';
 
 function Home() {
   return (
-    <SEOLayout>
+    <MainLayout>
       <h1>Home Page</h1>
-    </SEOLayout>
+    </MainLayout>
   );
 }
 

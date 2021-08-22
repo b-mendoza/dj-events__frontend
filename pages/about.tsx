@@ -1,10 +1,10 @@
-import { SEOLayout } from 'components/Layouts';
+import { MainLayout } from 'components/Layouts';
 
 function About() {
   return (
-    <SEOLayout title="About DJ Events">
+    <MainLayout title="DJ Events | About">
       <h1>About Page</h1>
-    </SEOLayout>
+    </MainLayout>
   );
 }
 
