@@ -1,17 +1,9 @@
-import 'styles/normalize.css';
+import 'styles/main.scss';
 
 import { AppProps } from 'next/app';
 
-import { GlobalStyles } from 'styles';
-
 function __NextApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <GlobalStyles />
-
-      <Component {...pageProps} />
-    </>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default __NextApp;
