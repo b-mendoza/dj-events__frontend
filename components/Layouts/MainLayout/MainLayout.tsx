@@ -1,18 +1,20 @@
 import Head from 'next/head';
 
-type SEOLayoutProps = {
+import styles from './MainLayout.module.scss';
+
+type MainLayoutProps = {
   children: React.ReactNode;
   description?: string;
   keywords?: string;
   title?: string;
 };
 
-function SEOLayout({
+function MainLayout({
   children,
   description = 'Find the latest DJ and other Musical Events',
   keywords = 'Music, DJ, EDM, Events',
   title = 'DJ Events | Find the Hottest Parties',
-}: SEOLayoutProps) {
+}: MainLayoutProps) {
   return (
     <>
       <Head>
@@ -21,9 +23,9 @@ function SEOLayout({
         <title>{title}</title>
       </Head>
 
-      {children}
+      <main className={styles['container']}>{children}</main>
     </>
   );
 }
 
-export default SEOLayout;
+export default MainLayout;

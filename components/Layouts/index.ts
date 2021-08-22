@@ -1,1 +1,1 @@
-export { SEOLayout } from './SEOLayout';
+export { MainLayout } from './MainLayout';
