@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import { Footer, Navbar } from 'components';
+
 import styles from './MainLayout.module.scss';
 
 type MainLayoutProps = {
@@ -23,7 +25,11 @@ function MainLayout({
         <title>{title}</title>
       </Head>
 
+      <Navbar />
+
       <main className={styles['container']}>{children}</main>
+
+      <Footer />
     </>
   );
 }

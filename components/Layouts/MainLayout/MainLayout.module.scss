@@ -1,9 +1,6 @@
 @import 'styles/mixins.scss';
 
 .container {
+  @include containerPositioning;
   @include paddingReset;
-
-  margin: 0 auto;
-
-  max-width: 120rem;
 }
