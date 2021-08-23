@@ -25,7 +25,7 @@ function NotFound() {
           404
         </h1>
 
-        <h3 className={styles['subTitle']}>__There is _nothin__g here___</h3>
+        <h3>__There is _nothin__g here___</h3>
 
         <Link href="/">
           <a className={styles['link']}>

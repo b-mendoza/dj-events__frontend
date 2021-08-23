@@ -32,8 +32,16 @@ body {
   }
 }
 
-p {
+p,
+ul {
   margin: 0;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
 }
 
 a {
@@ -44,8 +52,6 @@ a {
 
 ul {
   list-style-type: none;
-
-  margin: 0;
 
   padding: 0;
 }
