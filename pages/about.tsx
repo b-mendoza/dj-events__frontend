@@ -1,4 +1,4 @@
-import { MainLayout } from 'components/Layouts';
+import { MainLayout } from 'components';
 
 function About() {
   return (
