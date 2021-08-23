@@ -11,6 +11,10 @@ const redirectIconStyles: React.CSSProperties = {
   marginLeft: '0.3rem',
 };
 
+const heartIconStyles: React.CSSProperties = {
+  color: cssVariables.colors.primaryRedColor,
+};
+
 const __navList__: NavItem[] = [{ text: 'About', to: '/about' }];
 
 function Footer() {
@@ -22,11 +26,7 @@ function Footer() {
         </p>
 
         <p className={styles['general__info']}>
-          Made with{' '}
-          <FavoriteRounded
-            fontSize="large"
-            style={{ color: cssVariables.colors.primaryRedColor }}
-          />{' '}
+          Made with <FavoriteRounded fontSize="large" style={heartIconStyles} />{' '}
           by{' '}
           <a
             className={styles['general__info--author']}
