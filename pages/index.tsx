@@ -10,11 +10,11 @@ function Home() {
       <Image
         alt="Hero Image"
         className={styles['hero']}
-        height="570px"
+        height={524.875}
         layout="responsive"
         priority
         src="/hero.jpg"
-        width="1200px"
+        width={1105}
       />
     </MainLayout>
   );
