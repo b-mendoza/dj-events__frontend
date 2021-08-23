@@ -5,7 +5,7 @@ import { MainLayout } from 'components';
 
 import { cssVariables } from 'constants/shared';
 
-import styles from 'styles/pages/404.module.scss';
+import styles from 'styles/pages/NotFound.module.scss';
 
 const errorIconStyles: React.CSSProperties = {
   color: cssVariables.colors.primaryRedColor,
