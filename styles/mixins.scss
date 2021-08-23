@@ -1,7 +1,21 @@
+@import './styles/variables.scss';
+
 @mixin paddingReset {
   padding: 2rem;
 
   @media (min-width: 340px) {
     padding: 3rem;
+  }
+}
+
+@mixin containerPositioning {
+  margin: 0 auto;
+
+  max-width: 120rem;
+}
+
+@mixin externalLink {
+  &:hover {
+    color: lighten($color: $primaryLightBlueColor, $amount: 10%);
   }
 }
