@@ -1,0 +1,43 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.container {
+  @include containerPositioning;
+  @include paddingReset;
+
+  @media (min-width: $tabletBreakpoint) {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}
+
+.general {
+  $spaceBetweenElements: 1.5rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: $spaceBetweenElements;
+
+  &__info {
+    display: flex;
+
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: $spaceBetweenElements;
+    }
+
+    &--author {
+      @include externalLink;
+
+      display: flex;
+
+      align-items: center;
+
+      margin-left: 0.3rem;
+    }
+  }
+}
