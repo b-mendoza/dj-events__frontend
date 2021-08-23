@@ -1,0 +1,30 @@
+@import 'styles/variables.scss';
+
+.container {
+  @media (min-width: $tabletBreakpoint) {
+    display: grid;
+
+    place-content: center;
+
+    text-align: center;
+  }
+}
+
+.title,
+.subTitle {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.title,
+.link {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.link {
+  color: $primaryLightBlueColor;
+}
